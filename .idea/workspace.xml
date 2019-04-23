@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="472e4d12-624c-4e8b-bb2c-eeda72208fd8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/List/Item/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/List/Item/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SearchBox/SearchBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchBox/SearchBox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SearchInput/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchInput/index.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -82,11 +78,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/SearchInput/index.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="44" column="10" selection-start-line="44" selection-start-column="10" selection-end-line="44" selection-end-column="10" />
+            <state relative-caret-position="266">
+              <caret line="21" column="62" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Star/index.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="20" column="100" selection-start-line="20" selection-start-column="100" selection-end-line="20" selection-end-column="100" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Star/style.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -116,6 +133,7 @@
         <option value="$PROJECT_DIR$/src/components/List/Item/index.jsx" />
         <option value="$PROJECT_DIR$/src/components/SearchBox/SearchBox.js" />
         <option value="$PROJECT_DIR$/src/components/SearchInput/index.jsx" />
+        <option value="$PROJECT_DIR$/src/components/Star/index.jsx" />
       </list>
     </option>
   </component>
@@ -161,6 +179,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="HomeHeader" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Deploy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Deploy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Star" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Deploy" type="b2602c69:ProjectViewProjectNode" />
@@ -345,7 +370,7 @@
       <workItem from="1556053790081" duration="317000" />
       <workItem from="1556054406096" duration="353000" />
       <workItem from="1556054880118" duration="852000" />
-      <workItem from="1556055749200" duration="1285000" />
+      <workItem from="1556055749200" duration="1865000" />
     </task>
     <task id="LOCAL-00001" summary="package">
       <created>1556026786806</created>
@@ -382,11 +407,25 @@
       <option name="project" value="LOCAL" />
       <updated>1556056331529</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="search button">
+      <created>1556057088343</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1556057088343</updated>
+    </task>
+    <task id="LOCAL-00007" summary="star style">
+      <created>1556057271529</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1556057271529</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5595000" />
+    <option name="totallyTimeSpent" value="6175000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -428,7 +467,9 @@
     <MESSAGE value="package" />
     <MESSAGE value="import optimization" />
     <MESSAGE value="style shit" />
-    <option name="LAST_COMMIT_MESSAGE" value="style shit" />
+    <MESSAGE value="search button" />
+    <MESSAGE value="star style" />
+    <option name="LAST_COMMIT_MESSAGE" value="star style" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/LICENSE" />
@@ -574,8 +615,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/SearchInput/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="44" column="10" selection-start-line="44" selection-start-column="10" selection-end-line="44" selection-end-column="10" />
+        <state relative-caret-position="266">
+          <caret line="21" column="62" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Star/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Star/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="100" selection-start-line="20" selection-start-column="100" selection-end-line="20" selection-end-column="100" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
