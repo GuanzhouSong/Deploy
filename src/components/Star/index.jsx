@@ -17,8 +17,8 @@ class Star extends React.Component {
         return (
             <div className="star-container">
                 {[1, 2, 3, 4, 5].map((item, index) => {
-                    const lightClass = star >= item ? ' light' : ''
-                    return <i key={index} className={'icon-star' + lightClass}></i>
+                    return star >= item ? <i key={index} style={{ "color": "rgb(233, 32, 61)"}} className={'icon-star'}></i>:
+                        <i key={index} className={'icon-star'}style={{ "color": "rgb(255,209,202)"}}></i>
                 })}
             </div>
         )
