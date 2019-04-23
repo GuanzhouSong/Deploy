@@ -8,6 +8,9 @@
     "mock": "node --harmony ./mock/server.js",
     "build": "rd/s/q build && NODE_ENV=production && webpack --config ./webpack.production.config.js --progress --colors"
   },
+  "engines": {
+    "node": "10.3.0"
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
