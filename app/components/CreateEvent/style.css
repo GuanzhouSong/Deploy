@@ -1,0 +1,23 @@
+form{
+    margin-left:20px;
+    margin-top:30px;
+}
+
+label{
+
+}
+
+
+
+.submit {
+    text-align: center;
+    background-color: rgb(233, 32, 61);
+    color: #fff;
+    border: 1px solid rgb(233, 32, 61);
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left:10%;
+    width:80%;
+}
+
+
