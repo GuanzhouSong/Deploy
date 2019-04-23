@@ -2,54 +2,49 @@
     width: 100%;
     justify-content: space-between;
     display: flex;
-    background-color: rgb(233, 32, 61);
+    background-color: #e9203d;
     padding: 10px;
     position: fixed;
     bottom: 0;
+}
+#navigator * {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1;
+}
+#navigator > div:first-child {
+    width: 60px;
+    text-align: left;
+    margin: 5px 0;
+}
+#navigator div:nth-child(2) {
+    flex: auto;
+}
+#navigator div:nth-child(2) .search-container {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 5px;
+    width: 100%;
+}
+#navigator div:nth-child(2) .search-container i {
+    color: #ccc !important;
+    margin: 0 6px 0 3px;
+}
+#navigator div:nth-child(2) .search-container input {
+    font-size: 14px !important;
+    font-weight: normal;
+    width: 90%;
+    border: none;
+    color: #333;
+}
+#navigator div:nth-child(2) .search-container input::-webkit-input-placeholder {
+    /* WebKit browsers */
 
-    * {
-        color: #fff;
-        font-size: 16px;
-        line-height: 1;
-    }
-
-    &>div:first-child {
-        width: 60px;
-        text-align: left;
-        margin: 5px 0;
-    }
-
-    div:nth-child(2){
-        flex: auto;
-
-        .search-container {
-            background-color: #fff;
-            border-radius: 15px;
-            overflow: hidden;
-            padding: 5px;
-            width: 100%;
-    
-            i {
-                color: #ccc !important;
-                margin: 0 6px 0 3px;
-            }
-            input {
-                font-size: 14px !important;
-                font-weight: normal;
-                width: 90%;
-                border: none;
-                color: #333;
-
-                &::-webkit-input-placeholder { /* WebKit browsers */
-                    color: #999;
-                }
-            }
-        }
-    }
-
-    &>div:last-child {
-        width: 30px;
-        margin: 6px 0;
-        text-align: right;
-    }
+    color: #999;
+}
+#navigator > div:last-child {
+    width: 30px;
+    margin: 6px 0;
+    text-align: right;
 }
