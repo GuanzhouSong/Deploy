@@ -24,6 +24,7 @@ export default class SearchBox extends React.Component {
             value=""
             enterHandle={this.enterHandle.bind(this)}/>
           <div className="reminder">Hit ENTRY to Go!</div>
+
         </div>
       </div>
     )

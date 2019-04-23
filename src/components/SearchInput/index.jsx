@@ -11,6 +11,7 @@ class SearchInput extends React.Component {
 
     render() {
         return (
+            <div>
             <input
                 className="search-input"
                 type="text"
@@ -18,6 +19,8 @@ class SearchInput extends React.Component {
                 onChange={this.ChangeHandle.bind(this)}
                 onKeyUp={this.KeyUpHandle.bind(this)}
                 value={this.state.value}/>
+                <button onClick={this.click.bind(this)}>Search</button>
+            </div>
         )
     }
 
@@ -38,6 +41,9 @@ class SearchInput extends React.Component {
             return
         }
         this.props.enterHandle(e.target.value)
+    }
+    click() {
+        this.props.enterHandle(this.state.value)
     }
 }
 
