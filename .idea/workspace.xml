@@ -1,146 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="472e4d12-624c-4e8b-bb2c-eeda72208fd8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Category/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CommentCard/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navigator/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/OrderList/Item/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/EventService.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/localStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.babelrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/actions/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/actions/userinfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/userinfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/BackHeader/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BackHeader/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/BackHeader/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BackHeader/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/BackHomeHeader/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BackHomeHeader/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/BackHomeHeader/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BackHomeHeader/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/BuyAndStore/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BuyAndStore/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/BuyAndStore/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BuyAndStore/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Category/index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Category/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Category/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/CityList/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CityList/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/CityList/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CityList/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/CommentCard/index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/CommentCard/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CommentCard/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/CommentList/Item/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CommentList/Item/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/CommentList/Item/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CommentList/Item/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/CommentList/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CommentList/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/CommentList/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CommentList/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/CommentWrite/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CommentWrite/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/CommentWrite/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CommentWrite/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/CreateEvent/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreateEvent/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/CreateEvent/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreateEvent/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/CurrentCity/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CurrentCity/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/CurrentCity/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CurrentCity/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/DetailInfo/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DetailInfo/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/DetailInfo/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DetailInfo/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/EventCard/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EventCard/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/EventCard/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EventCard/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/EventItem/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EventItem/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/EventItem/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EventItem/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/HomeAd/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomeAd/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/HomeAd/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomeAd/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/HomeHeader/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomeHeader/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/HomeHeader/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomeHeader/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/List/Item/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/List/Item/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/List/Item/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/List/Item/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/List/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/List/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/List/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/List/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/LoadMore/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoadMore/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/LoadMore/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoadMore/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Login/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Login/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Navigator/index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Navigator/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigator/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/OrderList/Item/index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/OrderList/Item/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/OrderList/Item/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/OrderList/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/OrderList/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/OrderList/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/OrderList/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Register/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Register/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Register/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Register/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/SearchBox/SearchBox.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchBox/SearchBox.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/SearchBox/SearchBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchBox/SearchBox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/SearchHeader/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchHeader/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/SearchHeader/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchHeader/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/SearchInput/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchInput/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/SearchInput/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchInput/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Star/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Star/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Star/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Star/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/UserCard/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserCard/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/UserCard/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserCard/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/UserCommentList/index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/UserDetail/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserDetail/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/UserDetail/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserDetail/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/UserEventList/index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/UserFollowList/index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/UserInfo/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserInfo/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/UserInfo/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserInfo/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/UserInfoEdit/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserInfoEdit/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/UserInfoEdit/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserInfoEdit/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/UserInfoRead/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserInfoRead/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/UserInfoRead/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserInfoRead/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/UserItem/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserItem/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/UserItem/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserItem/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/UserLikeList/index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/localStoreKey.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/localStoreKey.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/constants/API.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/API.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/constants/Users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/Users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/constants/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/constants/userinfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/userinfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/404.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/404.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/AdminForEvent/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/AdminForEvent/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/AdminForUser/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/AdminForUser/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/City/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/City/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/Detail/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Detail/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/Detail/subpage/Buy.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Detail/subpage/Buy.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/Detail/subpage/Comment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Detail/subpage/Comment.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/Detail/subpage/Info.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Detail/subpage/Info.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/Home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Home/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/Home/subpage/Ad.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Home/subpage/Ad.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/Home/subpage/List.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Home/subpage/List.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/Login/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Login/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/Search/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Search/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/Search/subpage/List.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Search/subpage/List.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/fetch/delete.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fetch/delete.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/fetch/detail/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fetch/detail/detail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/fetch/get.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fetch/get.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/fetch/home/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fetch/home/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/fetch/post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fetch/post.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/fetch/search/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fetch/search/search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/fetch/user/orderlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fetch/user/orderlist.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index.tmpl.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tmpl.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/reducers/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/reducers/userinfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/userinfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/router/routeMap.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/routeMap.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/CommentService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/CommentService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/EventService.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/UserService.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/UserService.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/css/common.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/css/common.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/css/font.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/css/font.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/fonts/icomoon.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/fonts/icomoon.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/fonts/icomoon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/fonts/icomoon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/fonts/icomoon.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/fonts/icomoon.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/fonts/icomoon.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/fonts/icomoon.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/01icon_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/img/01icon_7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/home-ad.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/img/home-ad.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/list.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/img/list.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/store/configureStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/configureStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/util/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/util/localStore.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.production.config.js" beforeDir="false" />
-    </list>
+    <list default="true" id="472e4d12-624c-4e8b-bb2c-eeda72208fd8" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -151,23 +12,33 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/services/UserService.jsx">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Login/index.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="35" selection-start-column="35" selection-end-column="35" />
+              <caret column="11" selection-start-column="11" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/services/EventService.jsx">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -204,7 +75,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -222,6 +92,13 @@
               <item name="Deploy" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Deploy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Deploy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Login" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Deploy" type="b2602c69:ProjectViewProjectNode" />
@@ -246,6 +123,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -396,6 +274,7 @@
       <workItem from="1556053790081" duration="317000" />
       <workItem from="1556054406096" duration="353000" />
       <workItem from="1556054880118" duration="852000" />
+      <workItem from="1556055749200" duration="263000" />
     </task>
     <task id="LOCAL-00001" summary="package">
       <created>1556026786806</created>
@@ -404,11 +283,18 @@
       <option name="project" value="LOCAL" />
       <updated>1556026786806</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="import optimization">
+      <created>1556055808753</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1556055808753</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4310000" />
+    <option name="totallyTimeSpent" value="4573000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -421,22 +307,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24950495" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24950495" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32956153" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3281471" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39886847" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32956153" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3281471" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3281471" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32956153" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -448,7 +333,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="package" />
-    <option name="LAST_COMMIT_MESSAGE" value="package" />
+    <MESSAGE value="import optimization" />
+    <option name="LAST_COMMIT_MESSAGE" value="import optimization" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/LICENSE" />
@@ -461,9 +347,7 @@
     <entry file="file://$PROJECT_DIR$/src/App.js" />
     <entry file="file://$PROJECT_DIR$/src/index.js" />
     <entry file="file://$PROJECT_DIR$/public/favicon.ico" />
-    <entry file="file://$PROJECT_DIR$/src/App.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.css" />
     <entry file="file://$PROJECT_DIR$/src/actions/store.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -500,22 +384,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/UserService.jsx">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/constants/Users.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/UserService.jsx">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="35" selection-start-column="35" selection-end-column="35" />
+        <state relative-caret-position="297">
+          <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/src/components/Login/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+        <state>
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/EventService.jsx">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
