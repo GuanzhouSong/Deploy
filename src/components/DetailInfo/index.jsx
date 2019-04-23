@@ -24,7 +24,7 @@ class DetailInfo extends React.Component {
                     </div>
                     <div className="info-content">
                         <h1>{data.name}</h1>
-                        <div className="star-container">
+                        <div className="star-container">~
                             <span className="price">$ {data.cost}</span>
                         </div>
                         <p className="sub-title">Start at {time_start}</p>

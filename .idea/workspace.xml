@@ -3,14 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="472e4d12-624c-4e8b-bb2c-eeda72208fd8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/DetailInfo/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DetailInfo/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/List/Item/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/List/Item/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Star/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Star/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UserCard/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserCard/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UserDetail/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserDetail/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UserInfoEdit/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserInfoEdit/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UserInfoRead/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserInfoRead/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UserItem/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserItem/style.less" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,14 +17,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/DetailInfo/index.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="410">
-              <caret line="26" column="56" lean-forward="true" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
+              <caret line="26" column="57" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="133">
+                <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -92,6 +98,7 @@
         <option value="$PROJECT_DIR$/src/components/UserItem/style.less" />
         <option value="$PROJECT_DIR$/src/components/List/Item/index.jsx" />
         <option value="$PROJECT_DIR$/src/components/DetailInfo/index.jsx" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -613,7 +620,7 @@
       <workItem from="1556054406096" duration="353000" />
       <workItem from="1556054880118" duration="852000" />
       <workItem from="1556055749200" duration="4224000" />
-      <workItem from="1556062242308" duration="888000" />
+      <workItem from="1556062242308" duration="1057000" />
     </task>
     <task id="LOCAL-00001" summary="package">
       <created>1556026786806</created>
@@ -678,11 +685,18 @@
       <option name="project" value="LOCAL" />
       <updated>1556059648876</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="style to css">
+      <created>1556063783995</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1556063783995</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9422000" />
+    <option name="totallyTimeSpent" value="9591000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -697,7 +711,7 @@
     <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24950495" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24950495" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -730,9 +744,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="style to css" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/webpackDevServer.config.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-893">
@@ -1072,10 +1083,20 @@
     <entry file="file://$PROJECT_DIR$/src/components/DetailInfo/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="410">
-          <caret line="26" column="56" lean-forward="true" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
+          <caret line="26" column="57" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="133">
+            <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
