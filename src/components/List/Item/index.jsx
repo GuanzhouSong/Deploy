@@ -19,7 +19,7 @@ class ListItem extends React.Component {
         <div className="list-item clear-fix">
           <Link to={'/detail/' + data.id}>
             <div className="item-img-container float-left">
-              <img style={{"height": "200px","width": "200px"}} src={data.image_url}
+              <img style={{"height": "150px","width": "150px"}} src={data.image_url}
                    alt={data.name}/>
             </div>
             <div className="item-content">

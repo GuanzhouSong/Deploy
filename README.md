@@ -1,3 +1,31 @@
+Final Project for CS5610
+Team member:
+Lixin Bai
+Yuehua Huang
+Guanzhou Song
+
+## how to run
+use command `npm start` and open localhost:3000 in brewer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

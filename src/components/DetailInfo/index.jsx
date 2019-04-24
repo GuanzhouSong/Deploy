@@ -12,9 +12,9 @@ class DetailInfo extends React.Component {
         this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
     }
     render() {
-        // 获取数据
         const data = this.props.data
-        let time_start = data.time_start
+        console.log(data)
+        let time_start = data.time_start?data.time_start:null
         time_start = time_start.replace("T"," ").substr(0,time_start.length-6)
         return (
             <div id="detail-info-container">
@@ -24,8 +24,7 @@ class DetailInfo extends React.Component {
                     </div>
                     <div className="info-content">
                         <h1>{data.name}</h1>
-                        <div className="star-container">
-                            <Star star={data.star}/>
+                        <div className="star-container">~
                             <span className="price">$ {data.cost}</span>
                         </div>
                         <p className="sub-title">Start at {time_start}</p>
