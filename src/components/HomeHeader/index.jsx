@@ -20,10 +20,7 @@ class HomeHeader extends React.Component {
                     </Link>
                 </div>
                 <div>
-                    <div className="search-container row">
-                        <i className="icon-search"/>
-                        <SearchInput value="" enterHandle={this.enterHandle.bind(this)} />
-                    </div>
+                  <h1>YEVELP</h1>
                 </div>
               <Link to="/login"><span className="float-right login-user">{this.state.isLogedin? `My Account`: `Log in`}</span></Link>
             </div>
