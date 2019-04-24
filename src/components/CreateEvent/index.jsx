@@ -93,7 +93,7 @@ class Index extends React.Component {
         this.eventService.createEvent(this.state).then(
         alert("Create successfully!")
       ).then(
-         hashHistory.push('/profile/'+this.id)
+         hashHistory.push('/profile')
       ).catch(
         "Creation failed!"
       )

@@ -39,11 +39,11 @@ class Comment extends React.Component {
       res.text().then(function (value) {
         if (value === "") {
           return false;
-          // return constants.ANONYMOUS_USER;
         }
       })
     })
   }
+
 
   resultHandle(result) {
     if (!this.testResult) {
