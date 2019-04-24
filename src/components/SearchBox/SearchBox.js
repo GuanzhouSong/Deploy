@@ -12,7 +12,12 @@ export default class SearchBox extends React.Component {
   }
 
   enterHandle(value) {
-    hashHistory.push('/search/' + value)
+    //empty search
+    if (value === '') {
+      alert("Please enter city name!")
+    } else {
+      hashHistory.push('/search/' + value)
+    }
   }
 
   render() {

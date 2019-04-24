@@ -21,7 +21,7 @@ class HomeHeader extends React.Component {
           </Link>
         </div>
         <div>
-          <h1>YEVELP</h1>
+          <h1><i className="fa fa-magic"/>YEVELP</h1>
         </div>
         <i className="fa fa-user"/>
         <Link to="/login"><span
