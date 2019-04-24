@@ -29,7 +29,6 @@ class BackHeader extends React.Component {
         res => res.json().then(
           r => {
             let data = r;
-            console.log(data)
             this.setState({isLogedin:data})
           }
         )

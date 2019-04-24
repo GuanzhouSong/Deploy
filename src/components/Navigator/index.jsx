@@ -8,30 +8,29 @@ class Navigator extends React.Component {
   constructor(props) {
     super(props);
     this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
-    this.id = this.props.user.id;
 
     this.state = {
       user: {},
-      currentUser:{}
+      currentUser: {}
     }
   }
 
-  componentDidMount(){
+  componentDidMount() {
     this.setState({
-      user : this.props.user,
-      currentUser:this.props.currentUser
+      user: this.props.user,
+      currentUser: this.props.currentUser
     })
   }
 
   componentWillReceiveProps(newProps) {
-    if (newProps.user!== undefined) {
+    if (newProps.user !== undefined) {
       this.setState({
-        user : newProps.user
+        user: newProps.user
       })
     }
-    if(newProps.currentUser!==undefined){
+    if (newProps.currentUser !== undefined) {
       this.setState({
-        currentUser : newProps.currentUser
+        currentUser: newProps.currentUser
       })
     }
   }
@@ -49,9 +48,9 @@ class Navigator extends React.Component {
     return (
       <div id="navigator">
         {console.log(this.props.user.userType)}
-        <Link to={"/events/create/" + this.id}
+        <Link to={"/events/create/" + this.state.currentUser.id}
               hidden={this.state.user.userType !== "SELLER_USER"
-              ||this.state.user.id!==this.state.currentUser.id}>
+              || this.state.user.id !== this.state.currentUser.id}>
           <i className="icon-user"/>
           Create Event
         </Link>
@@ -87,13 +86,13 @@ class Navigator extends React.Component {
         </Link>
         <Link to="/users/all"
               hidden={this.state.user.userType !== "ADMIN_USER"
-              ||this.state.user.id!==this.state.currentUser.id}>
+              || this.state.user.id !== this.state.currentUser.id}>
           <i className="icon-user"/>
           Manage User
         </Link>
         <a onClick={() => window.scrollTo(0, 0)}
            hidden={this.state.user.userType === "ADMIN_USER"
-           ||this.state.user.id!==this.state.currentUser.id}>
+           || this.state.user.id !== this.state.currentUser.id}>
           <i className="fa fa-arrow-up"/>
         </a>
       </div>

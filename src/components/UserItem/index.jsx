@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
 
 import './style.css'
@@ -14,7 +15,7 @@ class UserItem extends React.Component {
     return (
       <tr className="wbdv-template wbdv-user wbdv-hidden">
         <td>
-          <a href={`/profile/` + data.id}>{data.username}</a>
+          <Link to={`/profile/` + data.id}>{data.username}</Link>
         </td>
         <td>{data.firstName}</td>
         <td>{data.lastName}</td>

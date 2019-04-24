@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
 
 import './style.css'
@@ -13,7 +14,7 @@ class EventItem extends React.Component {
         return (
             <tr>
               <td>
-                <a href={`/detail/`+ data.id}>{data.name}</a>
+                <Link to={`/detail/`+ data.id}>{data.name}</Link>
               </td>
               <td>{data.category}</td>
               <td>{data.time_start}</td>

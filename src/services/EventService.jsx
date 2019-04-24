@@ -18,7 +18,7 @@ class EventService {
         'content-type': 'application/json'
       },
       credentials: 'include'
-    }).then(response => response.json());
+    });
   }
 
   deleteEvent(eventId) {
@@ -34,6 +34,24 @@ class EventService {
     })
     .then(response => response.json());
   }
+
+  findSellerByEvent(eventId){
+    let promise = fetch(this.url + "/event/"+eventId+"/seller",
+      {
+        credentials: 'include'
+      });
+
+    return promise.then(function (value) {
+      return value.text().then(function (value2) {
+        if (value2 === "") {
+          return undefined;
+        } else {
+          return JSON.parse(value2);
+        }
+      });
+    });
+  }
+
 
   findCommentByEvent(eventId){
     return fetch(this.url + "/comment/" + eventId, {

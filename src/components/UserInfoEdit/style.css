@@ -1,12 +1,11 @@
 #userinfo-edit {
     background-color: #fff;
-    padding: 10px;
     font-size: 20px;
-    padding-bottom: 40px;
+    padding: 10px 10px 50px;
 }
 
 .username-container {
-    margin: 10px 0;
+    padding: 10px 0;
 }
 
 .username-container p {

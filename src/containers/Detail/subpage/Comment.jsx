@@ -29,35 +29,22 @@ class Comment extends React.Component {
   }
 
   loadFirstPageData() {
+    console.log(this.props.id)
     const result = getCommentData(this.props.id)
     this.resultHandle(result)
   }
 
-
-  testResult(result) {
-    result.then(res => {
-      res.text().then(function (value) {
-        if (value === "") {
-          return false;
-        }
-      })
-    })
-  }
-
-
   resultHandle(result) {
-    if (!this.testResult) {
-      return
-    }
-    result.then(res => {
-      return res.json()
-    }).then(json => {
-      console.log(json)
-      this.setState({
-        data: this.state.data.concat(json)
-      })
-    })
+    result.then(value=>
+      value.text().then(value2 =>
+        value2 === "" ? null :
+          this.setState({
+            data: this.state.data.concat(JSON.parse(value2))
+          })
+      )
+    )
   }
+
 }
 
 export default Comment

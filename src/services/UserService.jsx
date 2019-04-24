@@ -94,10 +94,21 @@ class UserService {
   }
 
   findUserById(userId) {
-    return fetch(this.url + "/user/" + userId, {
-      credentials: 'include'
-    })
-      .then(response => response.json());
+    let promise = fetch(this.url + "/user/" + userId,
+      {
+        credentials: 'include'
+      });
+
+    return promise.then(function (value) {
+      return value.text().then(function (value2) {
+        if (value2 === "") {
+          return undefined;
+          // return constants.ANONYMOUS_USER;
+        } else {
+          return JSON.parse(value2);
+        }
+      });
+    });
   }
 
   isFollow(sellerId){

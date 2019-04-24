@@ -91,14 +91,15 @@ class Index extends React.Component {
     this.setState({id:(new Date()).getTime().toString()}
     ,()=>
         this.eventService.createEvent(this.state).then(
-        alert("Create successfully!")
-      ).then(
-         hashHistory.push('/profile')
-      ).catch(
-        "Creation failed!"
+          res=>res?this.createSuccess():
+        alert("Creation failed!")
       )
     );
+  }
 
+  createSuccess(){
+    alert("Create successfully!");
+    hashHistory.push('/profile')
   }
 
   static isBlank(val) {

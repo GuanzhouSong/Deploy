@@ -7,7 +7,9 @@ label{
 
 }
 
-
+.eventInput{
+    width:80%;
+}
 
 .submit {
     text-align: center;

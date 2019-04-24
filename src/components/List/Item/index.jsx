@@ -12,7 +12,7 @@ class ListItem extends React.Component {
   }
 
   render() {
-    const data = this.props.data
+    const data = this.props.data;
     let time_start = data.time_start?data.time_start.replace("T", " ").substr(0, data.time_start.length - 6):""
     return (
         <div className="list-item clear-fix">
