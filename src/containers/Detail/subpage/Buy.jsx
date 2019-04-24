@@ -64,49 +64,65 @@ class Buy extends React.Component {
 
   loginCheck() {
     return isLogin().then(
-        res => res
+        res => res.json().then(
+          r =>{
+            var log = r;
+            console.log(log);
+            return log;
+          }
+        )
+
     )
   }
 
   storeHandle() {
-    const loginFlag = this.loginCheck()
-    if (!loginFlag) {
-      alert("please login first!")
-      return
-    }
-    const id = this.props.id
-    let success = false;
+    isLogin().then(
+      res => res.json().then(
+        r =>{
+          var log = r;
+          console.log(log);
+          if(log){
+            const id = this.props.id
 
-    if (this.state.isStore) {
-      unlikeEvent(id).then(
-          res => res.json().then(
-              tf => {
-                if(!tf){
-                  alert("emmm ,something goes wrong, please try again.")
-                }else{
-                  this.setState({isStore:!this.state.isStore})
-                }
-              }
-          )
+            if (this.state.isStore) {
+              unlikeEvent(id).then(
+                res => res.json().then(
+                  tf => {
+                    if(!tf){
+                      alert("emmm ,something goes wrong, please try again.")
+                    }else{
+                      this.setState({isStore:!this.state.isStore})
+                    }
+                  }
+                )
+              )
+            } else {
+              likeEvent(id).then(
+                res => res.json().then(
+                  tf => {
+                    if(!tf){
+                      alert("emmm ,something goes wrong, please try again.")
+                    }else{
+                      this.setState({isStore:!this.state.isStore})
+                    }
+                  }
+                )
+              )
+            }
+          }else{
+            alert("Please login first!")
+          }
+        }
       )
-    } else {
-      likeEvent(id).then(
-          res => res.json().then(
-              tf => {
-                if(!tf){
-                  alert("emmm ,something goes wrong, please try again.")
-                }else{
-                  this.setState({isStore:!this.state.isStore})
-                }
-              }
-          )
-      )
-    }
+    )
+
+
 
   }
 
   joinHandle() {
     const loginFlag = this.loginCheck()
+
     if (!loginFlag) {
       alert("please login first!")
       return
