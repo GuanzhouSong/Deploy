@@ -19,18 +19,20 @@ class BackHeader extends React.Component {
                     <i className="icon-chevron-left"/>
                 </span>
           <h1>{this.props.title}</h1>
-          <Link to="/login"><span className="float-right">{this.state.isLogedin? `My Account`: `Log in`}</span></Link>
+          <Link to="/login"><span className="float-right">{this.state.isLogedin? `My Account`: `Log in / Register`}</span></Link>
         </div>
     )
   }
 
   componentDidMount() {
     isLogin().then(
-        res => {
-          this.setState({
-            isLogedin: res
-          })
-        }
+        res => res.json().then(
+          r => {
+            let data = r;
+            console.log(data)
+            this.setState({isLogedin:data})
+          }
+        )
     )
 
   }
