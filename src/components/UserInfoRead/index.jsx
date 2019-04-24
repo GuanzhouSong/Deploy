@@ -51,7 +51,7 @@ class UserInfoRead extends React.Component {
     return (
       <div id="user-info-read">
         <div className="username-container row">
-          <img className="user-photo" src={this.props.user.photoLink === null ? this.anonymous : this.props.user.photoLink}
+          <img className="user-photo" src={this.props.user.photoLink === undefined ? this.anonymous : this.props.user.photoLink}
                alt=""/>
           <p>{this.props.user.username}</p>
           <button className="follow-button btn-danger"

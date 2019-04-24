@@ -182,7 +182,8 @@ class Index extends React.Component {
           </div>
 
           <div className="username-container row">
-            <img className="user-photo" src={this.state.photoLink} alt="photo"/>
+            <img className="user-photo" src={this.props.user.photoLink === undefined ? this.anonymous : this.props.user.photoLink}
+                 alt=""/>
             <p className="info-title">{this.state.username}</p>
 
           </div>
