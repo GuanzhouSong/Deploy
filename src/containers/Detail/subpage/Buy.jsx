@@ -121,39 +121,45 @@ class Buy extends React.Component {
   }
 
   joinHandle() {
-    const loginFlag = this.loginCheck()
+    isLogin().then(
+      res => res.json().then(
+        r =>{
+          var log = r;
+          console.log(log);
+          if(log){
+            const id = this.props.id
 
-    if (!loginFlag) {
-      alert("please login first!")
-      return
-    }
-    const id = this.props.id
-
-    if (this.state.isJoined) {
-      uninEvent(id).then(
-          res => res.json().then(
-              tf => {
-                if(!tf){
-                  alert("emmm ,something goes wrong, please try again.")
-                }else{
-                  this.setState({isJoined:!this.state.isJoined})
-                }
-              }
-          )
+            if (this.state.isJoined) {
+              inEvent(id).then(
+                res => res.json().then(
+                  tf => {
+                    if(!tf){
+                      alert("emmm ,something goes wrong, please try again.")
+                    }else{
+                      this.setState({isJoined:!this.state.isJoined})
+                    }
+                  }
+                )
+              )
+            } else {
+              uninEvent(id).then(
+                res => res.json().then(
+                  tf => {
+                    if(!tf){
+                      alert("emmm ,something goes wrong, please try again.")
+                    }else{
+                      this.setState({isJoined:!this.state.isJoined})
+                    }
+                  }
+                )
+              )
+            }
+          }else{
+            alert("Please login first!")
+          }
+        }
       )
-    } else {
-      inEvent(id).then(
-          res => res.json().then(
-              tf => {
-                if(!tf){
-                  alert("emmm ,something goes wrong, please try again.")
-                }else{
-                  this.setState({isJoined:!this.state.isJoined})
-                }
-              }
-          )
-      )
-    }
+    )
 
   }
 }
