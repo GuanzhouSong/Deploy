@@ -4,43 +4,60 @@ import CommentList from '../../../components/CommentList'
 import {getCommentData} from '../../../fetch/detail/detail'
 
 class Comment extends React.Component {
-    constructor(props, context) {
-        super(props, context);
-        this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
-        this.state = {
-            data: []
+  constructor(props, context) {
+    super(props, context);
+    this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
+    this.state = {
+      data: []
+    }
+  }
+
+  render() {
+    return (
+      <div>
+        {
+          this.state.data.length
+            ? <CommentList data={this.state.data}/>
+            : <div>Be the first one to COMMENT!</div>
         }
-    }
-    render() {
-        return (
-            <div>
-            {
-                this.state.data.length
-                ? <CommentList data={this.state.data}/>
-                : <div>Be the first one to COMMENT!</div>
-            }
-            </div>
-        )
-    }
-    componentDidMount() {
-        this.loadFirstPageData()
-    }
+      </div>
+    )
+  }
 
-    loadFirstPageData() {
-        const result = getCommentData(this.props.id)
-        this.resultHandle(result)
-    }
+  componentDidMount() {
+    this.loadFirstPageData()
+  }
 
-    resultHandle(result) {
-        result.then(res => {
-            return res.json()
-        }).then(json => {
-            console.log(json)
-            this.setState({
-                data: this.state.data.concat(json)
-            })
-        })
+  loadFirstPageData() {
+    const result = getCommentData(this.props.id)
+    this.resultHandle(result)
+  }
+
+
+  testResult(result) {
+    result.then(res => {
+      res.text().then(function (value) {
+        if (value === "") {
+          return false;
+          // return constants.ANONYMOUS_USER;
+        }
+      })
+    })
+  }
+
+  resultHandle(result) {
+    if (!this.testResult) {
+      return
     }
+    result.then(res => {
+      return res.json()
+    }).then(json => {
+      console.log(json)
+      this.setState({
+        data: this.state.data.concat(json)
+      })
+    })
+  }
 }
 
 export default Comment
