@@ -6,7 +6,8 @@ import Home from '../containers/Home'
 import City from '../containers/City'
 import Search from '../containers/Search'
 import Detail from '../containers/Detail'
-import Login from '../containers/Login'
+import Account from '../containers/Login'
+import Login from "../components/Login"
 import NotFound from '../containers/404'
 import CreateEvent from "../components/CreateEvent"
 import AdminforUser from "../components/AdminForUser";
@@ -24,6 +25,7 @@ class RouterMap extends React.Component {
           <Route exact path='/search/:city' component={Search}/>
           <Route exact path='/detail/:id' component={Detail}/>
           <Route exact path='/login' component={Login}/>
+          <Route exact path='/account' component={Account}/>
           <Route exact path='/register' component={Register}/>
           <Route exact path='/profile' component={UserInfo}/>
           <Route exact path='/profile/:id' component={UserInfo}/>

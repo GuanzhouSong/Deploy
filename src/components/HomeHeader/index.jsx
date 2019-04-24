@@ -11,36 +11,42 @@ class HomeHeader extends React.Component {
       isLogedin: false
     }
   }
-    render() {
-        return (
-            <div id="home-header">
-                <div>
-                    <Link to="/city">
 
-                    </Link>
-                </div>
-                <div>
-                  <h1>YEVELP</h1>
-                </div>
-              <Link to="/login"><span className="float-right login-user">{this.state.isLogedin? `My Account`: `Log in`}</span></Link>
-            </div>
-        )
-    }
+  render() {
+    return (
+      <div id="home-header">
+        <div>
+          <Link to="/city">
+
+          </Link>
+        </div>
+        <div>
+          <h1>YEVELP</h1>
+        </div>
+        <Link to="/account">
+
+          {console.log(this.state.isLogedin?"is":"no")}
+          <span className="float-right login-user">{this.state.isLogedin ? `My Account` : `Log in`}
+              </span>
+        </Link>
+      </div>
+    )
+  }
 
   componentDidMount() {
     isLogin().then(
-        res => {
-          this.setState({
-            isLogedin: res
-          })
-        }
+      res => {
+        this.setState({
+          isLogedin: res
+        })
+      }
     )
 
   }
 
-    enterHandle(value) {
-        hashHistory.push('/search/all/' + encodeURIComponent(value))
-    }
+  enterHandle(value) {
+    hashHistory.push('/search/all/' + encodeURIComponent(value))
+  }
 }
 
 export default HomeHeader
