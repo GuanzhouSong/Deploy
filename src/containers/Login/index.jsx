@@ -2,7 +2,7 @@ import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
-import {browserHistory} from 'react-router'
+import {hashHistory} from 'react-router'
 import UserService from '../../services/UserService.jsx'
 
 import * as userInfoActionsFromOtherFile from '../../actions/userinfo'
@@ -35,7 +35,7 @@ class Login extends React.Component {
 
   checkLogin() {
     this.userService.findCurrentUser().then(user =>
-      user === undefined ? null : browserHistory.push('/profile')
+      user === undefined ? null : hashHistory.push('/profile')
     )
   }
 
@@ -43,7 +43,7 @@ class Login extends React.Component {
   loginHandle(username, password, role) {
     this.userService.login(username, password, role).then(user =>
         user === undefined ? alert("Username or password is incorrect.") :
-          browserHistory.push('/profile')
+          hashHistory.push('/profile')
     )
   }
 
