@@ -1,0 +1,43 @@
+#user-info-read {
+    background-color: #fff;
+    padding: 10px;
+    padding-bottom: 50px;
+}
+
+
+.follow-button {
+    padding: 2px 5px;
+    height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+
+.info-container {
+    margin-top: 1px;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 40px;
+}
+
+.info-title {
+    width: 90px;
+    line-height: 1.5;
+    color: #666;
+    height: 10px;
+    margin-top: 5px;
+}
+
+.info-icon {
+    color: rgb(233, 32, 61);
+    width: 5%;
+    float: left;
+    margin-top: 12px;
+    margin-left: 2%;
+}
+

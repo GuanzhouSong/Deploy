@@ -1,7 +1,7 @@
 import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
 
-import './style.less'
+import './style.css'
 import {hashHistory, Link} from "react-router";
 import UserService from '../../services/UserService.jsx'
 import BackHeader from '../BackHeader'

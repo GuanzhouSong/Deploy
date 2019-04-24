@@ -1,5 +1,5 @@
 import React from 'react'
-import UserItem from "../../components/UserItem"
+import UserItem from "../UserItem"
 import '../../../node_modules/bootstrap/dist/css/bootstrap.css'
 import BackHeader from "../../components/BackHeader";
 import UserService from '../../services/UserService.jsx'

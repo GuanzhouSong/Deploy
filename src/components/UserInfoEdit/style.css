@@ -1,0 +1,80 @@
+#userinfo-edit {
+    background-color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    padding-bottom: 40px;
+}
+
+.username-container {
+    margin: 10px 0;
+}
+
+.username-container p {
+    font-size: 30px;
+    margin-left: 20px
+}
+
+.user-photo {
+    width: 60px;
+    height: 60px;
+    margin-left: 2%;
+}
+
+
+.input-container {
+    margin-top: 1px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 50px;
+}
+
+.input-container p {
+    width: 15%;
+    margin-left: 10px;
+}
+
+.input-container input {
+    font-size: 16px;
+    width: 75%;
+    margin-left: 2px;
+    height: 30px;
+}
+
+.input-container select {
+    font-size: 16px;
+    width: 75%;
+    height: 30px;
+    margin-left: 2px;
+}
+
+
+.btn-container {
+    margin-left: 5%;
+}
+
+.btn-update {
+    width: 35%;
+    text-align: center;
+    background-color: rgb(233, 32, 61);
+    color: #fff;
+    border: 1px solid rgb(233, 32, 61);
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px 5%;
+    padding: 5px 0;
+}
+
+.btn-logout {
+    width: 35%;
+    text-align: center;
+    background-color: rgb(233, 32, 61);
+    color: #fff;
+    border: 1px solid rgb(233, 32, 61);
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 5px 0;
+}

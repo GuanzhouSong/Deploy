@@ -3,7 +3,7 @@ import PureRenderMixin from 'react-addons-pure-render-mixin'
 
 import Star from '../../components/Star'
 
-import './style.less'
+import './style.css'
 import {Link} from "react-router";
 
 class DetailInfo extends React.Component {

@@ -3,7 +3,7 @@ import PureRenderMixin from 'react-addons-pure-render-mixin'
 
 import Star from '../Star'
 
-import './style.less'
+import './style.css'
 import EventService from "../../services/EventService";
 import UserService from "../../services/UserService";
 

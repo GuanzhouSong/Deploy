@@ -2,7 +2,7 @@ import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
 import {Link} from 'react-router'
 
-import './style.less'
+import './style.css'
 
 class UserCard extends React.Component {
   constructor(props, context) {
@@ -20,17 +20,18 @@ class UserCard extends React.Component {
     return (
       <div id="user-card" className="row">
         <div className="col-3 col-sm-2 col-lg-1">
-          <img src={user.photoLink === null ? anonymous : user.photoLink}
+          <img
+            className="user-photo"
+            src={user.photoLink === null ? anonymous : user.photoLink}
                alt=""/>
         </div>
         <div className="col-7 col-sm-9 col-lg-10">
           <Link to={'/user/' + user.id}>
-            <p>{user.username}</p>
+            <p className="user-name">{user.username}</p>
           </Link>
         </div>
         <div className="col-2 col-sm-1">
-          {/*{console.log(this.props.deleteUser)}*/}
-          <button className="delete-btn"
+          <button className="user-card-btn delete-btn btn-outline-danger"
                   hidden={this.props.deleteUser===null}
                   onClick={() => this.deleteUser(user.id)}>
             <i className="fa fa-close"/>

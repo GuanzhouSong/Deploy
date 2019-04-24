@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.less'
+import './style.css'
 import {hashHistory} from 'react-router'
 
 class BackHomeHeader extends React.Component {

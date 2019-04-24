@@ -1,0 +1,22 @@
+#back-header {
+    width: 100%;
+    background-color: rgb(233, 32, 61);
+    color: #fff;
+    padding: 15px 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#back-header h1 {
+    display: inline;
+    font-size: 16px;
+    line-height: 1;
+}
+
+#back-header .back-icon {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 20px;
+}

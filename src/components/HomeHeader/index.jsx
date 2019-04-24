@@ -1,7 +1,7 @@
 import React from 'react'
 import {hashHistory, Link} from 'react-router'
 import SearchInput from '../SearchInput'
-import './style.less'
+import './style.css'
 import {isLogin} from "../../fetch/user/orderlist";
 
 class HomeHeader extends React.Component {
@@ -25,7 +25,7 @@ class HomeHeader extends React.Component {
                         <SearchInput value="" enterHandle={this.enterHandle.bind(this)} />
                     </div>
                 </div>
-              <Link to="/login"><span className="float-right">{this.state.isLogedin? `My Account`: `Log in`}</span></Link>
+              <Link to="/login"><span className="float-right login-user">{this.state.isLogedin? `My Account`: `Log in`}</span></Link>
             </div>
         )
     }

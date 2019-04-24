@@ -9,8 +9,8 @@ import Detail from '../containers/Detail'
 import Login from '../containers/Login'
 import NotFound from '../containers/404'
 import CreateEvent from "../components/CreateEvent"
-import AdminforUser from "../containers/AdminForUser";
-import AdminforEvent from "../containers/AdminForEvent"
+import AdminforUser from "../components/AdminForUser";
+import AdminforEvent from "../components/AdminForEvent"
 import Register from '../components/Register'
 import UserInfo from '../components/UserInfo'
 

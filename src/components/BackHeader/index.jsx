@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.less'
+import './style.css'
 import {hashHistory, Link} from 'react-router'
 import {isLogin} from "../../fetch/user/orderlist";
 

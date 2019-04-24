@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router'
-import './style.less'
+import './style.css'
 import PureRenderMixin from "react-addons-pure-render-mixin";
 
 class Navigator extends React.Component {

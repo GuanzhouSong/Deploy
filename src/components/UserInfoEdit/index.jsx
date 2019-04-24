@@ -1,7 +1,7 @@
 import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
 
-import './style.less'
+import './style.css'
 import UserService from '../../services/UserService.jsx'
 import {hashHistory} from "react-router";
 
@@ -182,16 +182,14 @@ class Index extends React.Component {
           </div>
 
           <div className="username-container row">
-            <i className="fa fa-user"/>
-            <p>
-              {this.state.username}
-            </p>
-            <img src={this.state.photoLink} alt="photo"/>
+            <img className="user-photo" src={this.state.photoLink} alt="photo"/>
+            <p className="info-title">{this.state.username}</p>
+
           </div>
 
           <div className="input-container row">
-            <i className="fa fa-key"/>
-            <p>password</p>
+            <i className="info-icon fa fa-key"/>
+            <p className="info-title">password</p>
             <input
               type="password"
               placeholder="password"
@@ -201,8 +199,8 @@ class Index extends React.Component {
           </div>
 
           <div className="input-container row">
-            <i className="fa fa-key"/>
-            <p>verify password</p>
+            <i className="info-icon fa fa-key"/>
+            <p className="info-title">verify password</p>
             <input
               type="password"
               placeholder="verify password"
@@ -212,8 +210,8 @@ class Index extends React.Component {
           </div>
 
           <div className="input-container row">
-            <i className="fa fa-pencil"/>
-            <p>first name</p>
+            <i className="info-icon fa fa-pencil"/>
+            <p className="info-title">first name</p>
             <input
               type="text"
               placeholder="first name"
@@ -223,8 +221,8 @@ class Index extends React.Component {
           </div>
 
           <div className="input-container row">
-            <i className="fa fa-pencil"/>
-            <p>last name</p>
+            <i className="info-icon fa fa-pencil"/>
+            <p className="info-title">last name</p>
             <input
               type="text"
               placeholder="last name"
@@ -234,8 +232,8 @@ class Index extends React.Component {
           </div>
 
           <div className="input-container row">
-            <i className="fa fa-phone"/>
-            <p>phone</p>
+            <i className="info-icon fa fa-phone"/>
+            <p className="info-title">phone</p>
             <input
               type="tel"
               placeholder="phone"
@@ -245,8 +243,8 @@ class Index extends React.Component {
           </div>
 
           <div className="input-container row">
-            <i className="fa fa-envelope"/>
-            <p>email</p>
+            <i className="info-icon fa fa-envelope"/>
+            <p className="info-title">email</p>
             <input
               type="tel"
               placeholder="email"
@@ -256,8 +254,8 @@ class Index extends React.Component {
           </div>
 
           <div className="input-container row">
-            <i className="fa fa-neuter"/>
-            <p>role</p>
+            <i className="info-icon fa fa-neuter"/>
+            <p className="info-title">role</p>
             <select className="form-control"
                     value={this.state.role}
                     disabled>
@@ -268,8 +266,8 @@ class Index extends React.Component {
           </div>
 
           <div className="input-container row">
-            <i className="fa fa-home"/>
-            <p>address</p>
+            <i className="info-icon fa fa-home"/>
+            <p className="info-title">address</p>
             <input
               placeholder="address"
               onChange={this.addressChanged.bind(this)}
@@ -278,8 +276,8 @@ class Index extends React.Component {
           </div>
 
           <div className="input-container row">
-            <i className="fa fa-photo"/>
-            <p>photo link</p>
+            <i className="info-icon fa fa-photo"/>
+            <p className="info-title">photo link</p>
             <input
               placeholder="photo_url"
               onChange={this.photoChanged.bind(this)}

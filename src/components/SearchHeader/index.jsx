@@ -1,6 +1,6 @@
 import React from 'react'
 import {hashHistory, Link} from 'react-router'
-import './style.less'
+import './style.css'
 
 import SearchInput from '../SearchInput'
 import {isLogin} from "../../fetch/user/orderlist";

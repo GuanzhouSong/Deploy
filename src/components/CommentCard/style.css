@@ -3,6 +3,7 @@
     padding: 2px 5px;
     margin: 5px 10px;
 }
+
 .comment-item h3 {
     font-size: 18px;
     line-height: 1.5;
@@ -10,6 +11,7 @@
     margin-top: 5px;
     margin-bottom: 15px;
 }
+
 .comment-item p {
     color: #999;
     line-height: 1.5;

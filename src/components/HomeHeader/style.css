@@ -6,10 +6,23 @@
     padding: 10px;
 }
 #home-header * {
-    color: #fff;
     font-size: 16px;
     line-height: 1;
 }
+
+.login-user{
+    font-size: 16px;
+    line-height: 1;
+    color: #fff;
+    margin-top:10px;
+}
+
+#home-header.login-user{
+    font-size: 16px;
+    line-height: 1;
+    color: #fff;
+}
+
 #home-header > div:first-child {
     width: 80px;
     text-align: left;

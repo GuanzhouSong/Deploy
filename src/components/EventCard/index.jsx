@@ -2,7 +2,7 @@ import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
 import {Link} from 'react-router'
 
-import './style.less'
+import './style.css'
 
 class ListItem extends React.Component {
     constructor(props, context) {
@@ -37,7 +37,7 @@ class ListItem extends React.Component {
                     </div>
                 </Link>
                 <div>
-                    <button className="delete-btn"
+                    <button className="delete-btn btn-outline-danger"
                             hidden={this.props.deleteEvent===null}
                             onClick={() => this.deleteEvent(event.id)}>
                         <i className="fa fa-close"/>

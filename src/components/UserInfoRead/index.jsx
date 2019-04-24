@@ -1,7 +1,7 @@
 import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
 
-import './style.less'
+import './style.css'
 import UserService from "../../services/UserService";
 
 class UserInfoRead extends React.Component {
@@ -19,22 +19,17 @@ class UserInfoRead extends React.Component {
     };
   }
 
-  // componentWillReceiveProps(newProps) {
-  //   if (newProps.user.id !== undefined) {
-  //     // console.log(this.props)
-  //   }
-  // }
 
   componentDidMount() {
-    if(this.props.user.userType==="SELLER_USER"
-      &&this.props.currentUser!==undefined
-      &&this.props.currentUser.userType==="CUSTOMER_USER"){
-    this.userService.isFollow(this.props.user.id).then(
-      isFollow=>
-      this.setState({
-        isFollow:isFollow
-      })
-    )
+    if (this.props.user.userType === "SELLER_USER"
+      && this.props.currentUser !== undefined
+      && this.props.currentUser.userType === "CUSTOMER_USER") {
+      this.userService.isFollow(this.props.user.id).then(
+        isFollow =>
+          this.setState({
+            isFollow: isFollow
+          })
+      )
     }
   }
 
@@ -56,59 +51,59 @@ class UserInfoRead extends React.Component {
     return (
       <div id="user-info-read">
         <div className="username-container row">
-          {/*{console.log(this.state)}*/}
-          <i className="fa fa-user"/>
-          <p>{this.props.user.username}</p>
-          <img src={this.props.user.photoLink === null ? this.anonymous : this.props.user.photoLink}
+          <img className="user-photo" src={this.props.user.photoLink === null ? this.anonymous : this.props.user.photoLink}
                alt=""/>
-          <button hidden={this.state.isFollow
+          <p>{this.props.user.username}</p>
+          <button className="follow-button btn-danger"
+                  hidden={this.state.isFollow
           || this.props.currentUser === undefined
           || this.props.currentUser.userType !== "CUSTOMER_USER"
           || this.props.user.userType === "CUSTOMER_USER"}
                   onClick={this.follow}>
             follow
           </button>
-          <button hidden={!this.state.isFollow}
+          <button className="follow-button btn-danger"
+                  hidden={!this.state.isFollow}
                   onClick={this.unfollow}>
             unfollow
           </button>
         </div>
 
         <div className="info-container row">
-          <i className="fa fa-pencil"/>
-          <p className="title">first name:</p>
+          <i className="info-icon fa fa-pencil"/>
+          <p className="info-title">first name:</p>
           <p>{this.props.user.firstName}</p>
         </div>
 
         <div className="info-container row">
-          <i className="fa fa-pencil"/>
-          <p className="title">last name:</p>
+          <i className="info-icon fa fa-pencil"/>
+          <p className="info-title">last name:</p>
           <p>{this.props.user.lastName}
           </p>
         </div>
 
         <div className="info-container row">
-          <i className="fa fa-phone"/>
-          <p className="title">phone:</p>
+          <i className="info-icon fa fa-phone"/>
+          <p className="info-title">phone:</p>
           <p>{this.props.user.phone}</p>
         </div>
 
         <div className="info-container row">
-          <i className="fa fa-envelope "/>
-          <p className="title">email:</p>
+          <i className="info-icon fa fa-envelope "/>
+          <p className="info-title">email:</p>
           <p>{this.props.user.email}</p>
         </div>
 
         <div className="info-container row">
-          <i className="fa fa-neuter"/>
-          <p className="title">role:</p>
+          <i className="info-icon fa fa-neuter"/>
+          <p className="info-title">role:</p>
           <p>{this.props.user.userType === "CUSTOMER_USER" ? "customer" :
             this.props.user.userType === "SELLER_USER" ? "seller" : "admin"}</p>
         </div>
 
         <div className="info-container row">
-          <i className="fa fa-home"/>
-          <p className="title">address:</p>
+          <i className="info-icon fa fa-home"/>
+          <p className="info-title">address:</p>
           <p>{this.props.user.address}</p>
         </div>
 

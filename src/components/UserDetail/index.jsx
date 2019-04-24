@@ -2,7 +2,7 @@ import React from 'react'
 import EventCard from '../EventCard'
 import UserCard from '../UserCard'
 import CommentCard from '../CommentCard'
-import './style.less'
+import './style.css'
 import EventService from "../../services/EventService";
 import UserService from "../../services/UserService";
 
