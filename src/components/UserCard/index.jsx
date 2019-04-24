@@ -26,7 +26,7 @@ class UserCard extends React.Component {
                alt=""/>
         </div>
         <div className="col-7 col-sm-9 col-lg-10">
-          <Link to={'/user/' + user.id}>
+          <Link to={'/profile/' + user.id}>
             <p className="user-name">{user.username}</p>
           </Link>
         </div>

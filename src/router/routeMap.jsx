@@ -25,7 +25,8 @@ class RouterMap extends React.Component {
           <Route exact path='/detail/:id' component={Detail}/>
           <Route exact path='/login' component={Login}/>
           <Route exact path='/register' component={Register}/>
-          <Route exact path='/user/:id' component={UserInfo}/>
+          <Route exact path='/profile' component={UserInfo}/>
+          <Route exact path='/profile/:id' component={UserInfo}/>
           <Route exact path='/users/all' component={AdminforUser}/>
           <Route exact path='/events/create/:id' component={CreateEvent}/>
           <Route exact path='/events/all' component={AdminforEvent}/>

@@ -14,7 +14,7 @@ class UserItem extends React.Component {
     return (
       <tr className="wbdv-template wbdv-user wbdv-hidden">
         <td>
-          <a href={`/user/` + data.id}>{data.username}</a>
+          <a href={`/profile/` + data.id}>{data.username}</a>
         </td>
         <td>{data.firstName}</td>
         <td>{data.lastName}</td>

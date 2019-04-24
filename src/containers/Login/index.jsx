@@ -35,7 +35,7 @@ class Login extends React.Component {
 
   checkLogin() {
     this.userService.findCurrentUser().then(user =>
-      user === undefined ? null : hashHistory.push('/user/'+user.id)
+      user === undefined ? null : hashHistory.push('/profile')
     )
   }
 
@@ -43,7 +43,7 @@ class Login extends React.Component {
   loginHandle(username, password, role) {
     this.userService.login(username, password, role).then(user =>
         user === undefined ? alert("Username or password is incorrect.") :
-          hashHistory.push('/user/'+user.id)
+          hashHistory.push('/profile')
     )
   }
 

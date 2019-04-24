@@ -13,7 +13,7 @@ class UserInfo extends React.Component {
     super(props, context);
     this.userService = new UserService();
     this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
-    this.id = parseInt(this.props.params.id);
+    // this.id = parseInt(this.props.params.id);
 
     this.state = {
       user: {},
@@ -22,25 +22,42 @@ class UserInfo extends React.Component {
   }
 
   componentWillReceiveProps(newProps) {
-    this.userService.findUserById(newProps.params.id).then(user =>
-      this.setState({
-        user: user
-      })
-    );
+    if (newProps.params.id === undefined) {
+      this.userService.findCurrentUser().then(user =>
+        this.setState({
+          user: user
+        })
+      );
+    } else {
+      this.userService.findUserById(newProps.params.id).then(user =>
+        this.setState({
+          user: user
+        })
+      );
+    }
     window.scrollTo(0, 0);
   }
 
   componentDidMount() {
-    this.userService.findUserById(this.id).then(user =>
-      this.setState({
-        user: user
-      })
-    );
-    this.userService.findCurrentUser().then(user =>
-      this.setState({
-        currentUser: user
-      })
-    )
+    if (this.props.params.id === undefined) {
+      this.userService.findCurrentUser().then(user =>
+        this.setState({
+          user: user
+        })
+      )
+    }
+    if (this.props.params.id !== undefined) {
+      this.userService.findUserById(this.props.params.id)
+        .then(user =>
+          this.setState({
+            user: user
+          })
+        );
+      this.userService.findCurrentUser().then(user =>
+        this.setState({
+          currentUser: user
+        }))
+    }
   }
 
 
