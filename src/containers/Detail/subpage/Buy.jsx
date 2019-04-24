@@ -16,18 +16,18 @@ class Buy extends React.Component {
     super(props)
     this.state = {
       isStore: false,
-      isJoined:false
+      isJoined: false
     }
   }
 
   render() {
     return (
-        <BuyAndStore isStore={this.state.isStore}
-                     isJoined={this.state.isJoined}
-                     storeHandle={this.storeHandle.bind(this)}
-                     joinHandle={this.joinHandle.bind(this)}
+      <BuyAndStore isStore={this.state.isStore}
+                   isJoined={this.state.isJoined}
+                   storeHandle={this.storeHandle.bind(this)}
+                   joinHandle={this.joinHandle.bind(this)}
 
-        />
+      />
     )
   }
 
@@ -38,60 +38,59 @@ class Buy extends React.Component {
   checkStoreState() {
     const id = this.props.id
     isLiked(id).then(
-        res => {
-          res.json().then(
-              r => {
-                if (r == true) {
-                  this.setState({isStore: true})
-                }
-              }
-          )
-        }
+      res => {
+        res.json().then(
+          r => {
+            if (r == true) {
+              this.setState({isStore: true})
+            }
+          }
+        )
+      }
     )
     isIn(id).then(
-        res => {
-          res.json().then(
-              r => {
-                if (r == true) {
-                  this.setState({isJoined: true})
-                }
-              }
-          )
-        }
+      res => {
+        res.json().then(
+          r => {
+            if (r == true) {
+              this.setState({isJoined: true})
+            }
+          }
+        )
+      }
     )
 
   }
 
   loginCheck() {
     return isLogin().then(
-        res => res.json().then(
-          r =>{
-            var log = r;
-            console.log(log);
-            return log;
-          }
-        )
-
+      res => res.json().then(
+        r => {
+          var log = r;
+          console.log(log);
+          return log;
+        }
+      )
     )
   }
 
   storeHandle() {
     isLogin().then(
       res => res.json().then(
-        r =>{
+        r => {
           var log = r;
           console.log(log);
-          if(log){
+          if (log) {
             const id = this.props.id
 
             if (this.state.isStore) {
               unlikeEvent(id).then(
                 res => res.json().then(
                   tf => {
-                    if(!tf){
+                    if (!tf) {
                       alert("emmm ,something goes wrong, please try again.")
-                    }else{
-                      this.setState({isStore:!this.state.isStore})
+                    } else {
+                      this.setState({isStore: !this.state.isStore})
                     }
                   }
                 )
@@ -100,16 +99,16 @@ class Buy extends React.Component {
               likeEvent(id).then(
                 res => res.json().then(
                   tf => {
-                    if(!tf){
+                    if (!tf) {
                       alert("emmm ,something goes wrong, please try again.")
-                    }else{
-                      this.setState({isStore:!this.state.isStore})
+                    } else {
+                      this.setState({isStore: !this.state.isStore})
                     }
                   }
                 )
               )
             }
-          }else{
+          } else {
             alert("Please login first!")
           }
         }
@@ -117,44 +116,44 @@ class Buy extends React.Component {
     )
 
 
-
   }
 
   joinHandle() {
     isLogin().then(
       res => res.json().then(
-        r =>{
+        r => {
           var log = r;
           console.log(log);
-          if(log){
+          if (log) {
             const id = this.props.id
 
             if (this.state.isJoined) {
-              inEvent(id).then(
+              uninEvent(id).then(
                 res => res.json().then(
                   tf => {
-                    if(!tf){
-                      alert("emmm ,something goes wrong, please try again.")
-                    }else{
-                      this.setState({isJoined:!this.state.isJoined})
+                    if (!tf) {
+                      alert("1emmm ,something goes wrong, please try again.")
+                    } else {
+                      this.setState({isJoined: !this.state.isJoined})
                     }
                   }
                 )
               )
             } else {
-              uninEvent(id).then(
+              inEvent(id).then(
                 res => res.json().then(
                   tf => {
-                    if(!tf){
-                      alert("emmm ,something goes wrong, please try again.")
-                    }else{
-                      this.setState({isJoined:!this.state.isJoined})
+                    if (!tf) {
+                      alert("2emmm ,something goes wrong, please try again.")
+                    } else {
+                      this.setState({isJoined: !this.state.isJoined})
                     }
                   }
                 )
               )
+
             }
-          }else{
+          } else {
             alert("Please login first!")
           }
         }
