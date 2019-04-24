@@ -13,7 +13,6 @@ class SearchInput extends React.Component {
     return (
       <div className="search-input" >
         <input
-
           type="text"
           placeholder="Please enter city name"
           onChange={this.ChangeHandle.bind(this)}

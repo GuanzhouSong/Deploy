@@ -5,20 +5,30 @@
     text-align: center;
     position: relative;
 }
+
 #search-header .input-container {
-    background-color: #fff;
-    border-radius: 15px;
+    background-color: transparent;
+    border: 0;
+    /*border-radius: 15px;*/
     overflow: hidden;
     padding: 5px;
     text-align: left;
     margin-left: 30px;
-    margin-right: 10px;
+    margin-right: 5px;
 }
+
 #search-header .input-container i {
     color: #ccc;
 }
+
+#search-header .float-right {
+    color: white;
+    border-color: white;
+}
+
+
 #search-header .back-icon {
     width: 16px;
     height: 16px;
-    margin-top: 6px;
+    margin-top: 7px;
 }

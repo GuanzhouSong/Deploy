@@ -1,10 +1,8 @@
 #user-detail {
-    padding-bottom: 40px;
-    margin: 0 10px 10px 10px;
-    padding-top: 10px;
+    padding: 10px 10px 40px;
     border-top: 1px solid #cccccc;
+    background-color: white;
 }
-
 
 .title {
     margin-left: 30px;

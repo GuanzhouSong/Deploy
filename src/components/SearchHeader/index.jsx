@@ -19,9 +19,13 @@ class SearchHeader extends React.Component {
                     <i className="icon-chevron-left"></i>
                 </span>
                 <div className="input-container">
-                    <SearchInput value={this.props.keyword || ''} enterHandle={this.enterHandle.bind(this)}/>
+                  <Link to="/login">
+
+                    <span className="float-right">{this.state.isLogedin? `My Account`: `Log in`}</span>
+                  </Link>
+                  <SearchInput value={this.props.keyword || ''} enterHandle={this.enterHandle.bind(this)}/>
                 </div>
-              <Link to="/login"><span className="float-right">{this.state.isLogedin? `My Account`: `Log in`}</span></Link>
+
             </div>
         )
     }
