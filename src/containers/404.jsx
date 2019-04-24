@@ -8,7 +8,7 @@ export default class NotFound extends React.Component {
     }
     render() {
         return (
-            <h1>The page is on the way!</h1>
+            <h1>The page is on the page!</h1>
         )
     }
 }

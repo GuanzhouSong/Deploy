@@ -9,11 +9,10 @@ class Search extends React.Component {
     render() {
         // console.log('search' ,this.props.params);
         const params = this.props.params;
-        const city = params.city?params.city:"boston"
         return (
             <div>
-                <SearchHeader keyword={city}/>
-                <SearchList keyword={city} cityName={city}/>
+                <SearchHeader keyword={params.city}/>
+                <SearchList keyword={params.city} cityName={params.city}/>
             </div>
         )   
     }

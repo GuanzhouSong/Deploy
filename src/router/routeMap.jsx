@@ -23,7 +23,6 @@ class RouterMap extends React.Component {
           <IndexRoute component={Home}/>
           <Route exact path='/city' component={City}/>
           <Route exact path='/search/:city' component={Search}/>
-          <Route exact path='/search/' component={Search}/>
           <Route exact path='/detail/:id' component={Detail}/>
           <Route exact path='/login' component={Login}/>
           <Route exact path='/account' component={Account}/>
