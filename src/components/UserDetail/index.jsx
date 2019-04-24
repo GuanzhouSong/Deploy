@@ -153,7 +153,7 @@ class UserDetail extends React.Component {
            hidden={this.props.user.userType === "ADMIN_USER"}>
         <div id="user-event" className="detail-container">
           <div className="row">
-            <h3 className="title">Joined Events </h3>
+            <h3 className="title">{this.props.user.userType === "CUSTOMER_USER"?`Joined Event`:`Created Event`}</h3>
           </div>
           {this.state.eventData.length ?
             <div>
@@ -167,7 +167,7 @@ class UserDetail extends React.Component {
                         this.unAttendEvent.bind(this) : this.deleteEvent.bind(this)}/>
               })}
             </div>
-            : <p className="no">Join some RIGHT NOW!</p>}
+            : <p className="no">{this.props.user.userType === "CUSTOMER_USER"?`Joined Some RIGHT NOW!`:`Create NOW!`}</p>}
         </div>
 
         <div id="user-favourite" className="detail-container 1"
