@@ -31,7 +31,7 @@ class CommentWrite extends React.Component {
     postComment(this.props.id, this.state.review, this.state.star).then(
         res => {
           res.json().then(r => {
-                if (r == false) {
+                if (r === false) {
                   alert("Attend the event before comment!")
                 }
               }
