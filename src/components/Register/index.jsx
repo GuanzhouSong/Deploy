@@ -42,7 +42,7 @@ class Register extends React.Component {
           // if (router) {
           //   hashHistory.push(router)
           // } else {
-          hashHistory.push('/User')
+          hashHistory.push('/Profile')
           // }
         }
       )
