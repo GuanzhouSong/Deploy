@@ -16,6 +16,10 @@ class DetailInfo extends React.Component {
         console.log(data)
         let time_start = data.time_start?data.time_start:null
         time_start = time_start.replace("T"," ").substr(0,time_start.length-6)
+        function isNumber(obj) {
+            return obj === +obj
+        }
+
         return (
             <div id="detail-info-container">
                 <div className="info-container clear-fix">
@@ -30,7 +34,11 @@ class DetailInfo extends React.Component {
                         <p className="sub-title">Start at {time_start}</p>
                         <p className="sub-title">{data.category}</p>
                         <p className="sub-title">{data.address} {data.city} {data.state}</p>
-                        <Link to={'/user/' + data.business_id}>{data.business_id}</Link>
+                        {isNumber(data.business_id)?
+                            <Link to={'/profile/' + data.business_id}>{data.business_id}</Link>:
+                          <p className="sub-title">{data.business_id}</p>
+
+                        }
                     </div>
                 </div>
                 <p dangerouslySetInnerHTML={{__html: data.description}} className="info-desc"></p>

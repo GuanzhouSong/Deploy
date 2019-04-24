@@ -19,7 +19,7 @@ class SearchInput extends React.Component {
           onChange={this.ChangeHandle.bind(this)}
           onKeyUp={this.KeyUpHandle.bind(this)}
           value={this.state.value}/>
-        <button className="btn-search btn btn-outline-danger"
+        <button className="btn-search btn btn-outline-danger float-right"
                 onClick={this.click.bind(this)}>Search
         </button>
       </div>
