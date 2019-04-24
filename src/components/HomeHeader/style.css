@@ -6,6 +6,17 @@
     padding: 10px;
 }
 
+#home-header .float-right{
+    margin-top: 5px;
+    color: white;
+}
+
+#home-header .fa{
+    margin-top: 5px;
+    margin-right: 3px;
+    color: white;
+}
+
 #home-header h1 {
     color: white;
     margin-left: 30%;

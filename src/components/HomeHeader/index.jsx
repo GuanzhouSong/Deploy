@@ -23,6 +23,7 @@ class HomeHeader extends React.Component {
         <div>
           <h1>YEVELP</h1>
         </div>
+        <i className="fa fa-user"/>
         <Link to="/login"><span
           className="float-right">{this.state.isLogedin ? `My Account` : `Log in / Register`}</span></Link>
       </div>
