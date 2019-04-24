@@ -42,7 +42,8 @@ class UserInfo extends React.Component {
     if (this.props.params.id === undefined) {
       this.userService.findCurrentUser().then(user =>
         this.setState({
-          user: user
+          user: user,
+          currentUser: user
         })
       )
     }
