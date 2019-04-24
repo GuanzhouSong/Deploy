@@ -24,10 +24,11 @@ class HomeHeader extends React.Component {
           <h1>YEVELP</h1>
         </div>
         <Link to="/login"><span
-          className="float-right">{this.state.isLogedin? `My Account` : `Log in / Register`}</span></Link>
+          className="float-right">{this.state.isLogedin ? `My Account` : `Log in / Register`}</span></Link>
       </div>
     )
   }
+
 
   componentDidMount() {
     isLogin().then(
@@ -42,6 +43,7 @@ class HomeHeader extends React.Component {
     )
 
   }
+
 
   checkLogin() {
     isLogin().then(
@@ -59,6 +61,7 @@ class HomeHeader extends React.Component {
 
   enterHandle(value) {
     hashHistory.push('/search/' + encodeURIComponent(value))
+
   }
 }
 

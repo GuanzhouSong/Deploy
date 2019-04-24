@@ -19,12 +19,11 @@ export default class SearchBox extends React.Component {
     return (
       <div className="container-fluid searchbox image">
         <div className="row inputBox">
-          <div className="col-1"/>
+          <div className="col-2"/>
           <SearchInput
             value=""
             enterHandle={this.enterHandle.bind(this)}/>
           <div className="reminder">Hit ENTRY to Go!</div>
-
         </div>
       </div>
     )

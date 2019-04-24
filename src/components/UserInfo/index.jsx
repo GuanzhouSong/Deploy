@@ -1,6 +1,6 @@
 import React from 'react'
 import UserInfoRead from '../UserInfoRead'
-import Index from '../UserInfoEdit'
+import UserInfoEdit from '../UserInfoEdit'
 import BackHomeHeader from '../../components/BackHomeHeader'
 import BackHeader from '../../components/BackHeader'
 import UserDetail from '../UserDetail'
@@ -71,7 +71,7 @@ class UserInfo extends React.Component {
             : this.state.currentUser.id === this.state.user.id ?
             <div>
               <BackHomeHeader title="My Info"/>
-              <Index user={this.state.user}/>
+              <UserInfoEdit user={this.state.user}/>
             </div>
             :
             <div>

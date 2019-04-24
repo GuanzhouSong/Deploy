@@ -1,37 +1,21 @@
 .image {
-  background-image: url(https://s3-media3.fl.yelpcdn.com/assets/srv0/yelp_large_assets/b214c3715517/assets/img/home/hero_photos/mBTG70TAjqcIovSuFMalDQ.jpg);
-  height: 500px;
-}
-
-.input {
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  width: 80%;
-  vertical-align: center;
+    background-image: url(https://s3-media3.fl.yelpcdn.com/assets/srv0/yelp_large_assets/b214c3715517/assets/img/home/hero_photos/mBTG70TAjqcIovSuFMalDQ.jpg);
+    height: 500px;
 }
 
 .inputBox {
-  top: 50%;
-  bottom: 50%;
-  text-align: center;
-  margin: 0 auto;
-  padding-top: 16%;
+    top: 50%;
+    bottom: 50%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 16%;
 }
 
-.searchbox {
-  text-align: center;
-  vertical-align: middle;
-  height: 500px;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.reminder{
-  margin-top:20px;
-  margin-left:45%;
-  color: #ffffff;
-font-size: x-large;
+.reminder {
+    margin-top: 20px;
+    margin-left: 45%;
+    color: #ffffff;
+    font-size: x-large;
 }
 
 .search_button {

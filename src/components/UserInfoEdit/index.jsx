@@ -10,6 +10,7 @@ class Index extends React.Component {
     super(props, context);
     this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
     this.userService = new UserService();
+    this.getProfile = this.getProfile.bind(this);
 
     this.state = {
       id: 0,
@@ -27,10 +28,9 @@ class Index extends React.Component {
     };
   }
 
-  // componentWillReceiveProps(newProps) {
-  //   this.getProfile()
-  //   console.log("ss")
-  // }
+  componentWillReceiveProps(newProps) {
+    this.getProfile(newProps.user)
+  }
 
   componentDidMount() {
     this.getProfile(this.props.user)
