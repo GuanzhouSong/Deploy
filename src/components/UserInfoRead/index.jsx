@@ -82,11 +82,11 @@ class UserInfoRead extends React.Component {
           </p>
         </div>
 
-        <div className="info-container row">
-          <i className="info-icon fa fa-phone"/>
-          <p className="info-title">phone:</p>
-          <p>{this.props.user.phone}</p>
-        </div>
+        {/*<div className="info-container row">*/}
+          {/*<i className="info-icon fa fa-phone"/>*/}
+          {/*<p className="info-title">phone:</p>*/}
+          {/*<p>{this.props.user.phone}</p>*/}
+        {/*</div>*/}
 
         <div className="info-container row">
           <i className="info-icon fa fa-envelope "/>
@@ -101,11 +101,11 @@ class UserInfoRead extends React.Component {
             this.props.user.userType === "SELLER_USER" ? "seller" : "admin"}</p>
         </div>
 
-        <div className="info-container row">
-          <i className="info-icon fa fa-home"/>
-          <p className="info-title">address:</p>
-          <p>{this.props.user.address}</p>
-        </div>
+        {/*<div className="info-container row">*/}
+          {/*<i className="info-icon fa fa-home"/>*/}
+          {/*<p className="info-title">address:</p>*/}
+          {/*<p>{this.props.user.address}</p>*/}
+        {/*</div>*/}
 
       </div>
     )
