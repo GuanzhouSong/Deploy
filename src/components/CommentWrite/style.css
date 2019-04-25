@@ -1,8 +1,8 @@
 .write-comment {
   border-bottom: 1px solid #f1f1f1;
   padding-bottom: 30px;
-  margin-bottom: 10px;
-
+  padding-left:20px;
+  padding-top: 10px;
 }
 
 h3 {
@@ -19,4 +19,9 @@ p {
 .comment_star{
   height: 0px;
   width: 10px;
+}
+
+.write-comment .btn-danger{
+  border-radius: 5px;
+  margin-top:10px;
 }
